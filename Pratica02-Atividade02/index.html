@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prática 02 - Atividade 02</title>
+    <style>
+      *, html, body, div, form {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .botao-cadastrar {
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="/cadastro" method="post" >
+        <label for="nome-completo">Nome Completo:</label><br />
+        <input type="text" id="nome-completo" name="nome-completo" value="" /><br />
+        <br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <br />
+        <label for="phone">Telefone:</label><br />
+        <input type="phone" id="phone" name="phone" /><br />
+        <br />
+        <input class="botao-cadastrar" type="submit" value="Cadastrar" />
+      </form>
+    </div>
+  </body>
+</html>
