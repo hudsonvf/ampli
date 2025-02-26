@@ -1,0 +1,16 @@
+*, html, body, main, div, table {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  table, tr, th, td {
+    border: 2px solid;
+  }
+
+  th {
+    font-weight: 700;
+  }
+
+  td {
+    padding-inline: 7px;
+  }
+  
