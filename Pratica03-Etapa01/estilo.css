@@ -1,0 +1,106 @@
+/* ↓ fonte poppins importada via internet do google fonts ↓ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ↓ cores utilizadas na página ↓ */
+:root {
+    --primary-bg: #081d29;
+    --secondary-bg: #112e42;
+    --text: #ededed;
+    --principal-span: #00abf0;
+    --cinza: #6a6a6a; 
+}
+
+/* ↓ estilo utilizado na página ↓ */
+*, html, body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: var(--primary-bg);
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+
+
+/* estilo no header / nav ↓ */
+nav {
+    height: auto;
+    width: 100vw;
+    display: flex;
+}
+
+nav img {
+    width: 100px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+nav a {
+    color: var(--text);
+    align-self: center;
+    margin-left: 70%;
+}
+
+
+/* estilo na section / conteúdo principal ↓ */
+main {
+    margin-top: 10px;
+    margin-bottom: 115px;
+}
+
+main div section h1, p {
+    color: var(--text);
+}
+
+main div section {
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+main div section p {
+    width: 500px;
+}
+
+.span-se {
+    color: var(--principal-span);
+}
+
+main div section a button {
+    color: var(--text);
+    background-color: var(--principal-span);
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 4px 8px 10px var(--cinza);
+}
+
+.btn-contato {
+    margin-left: 25px;
+}
+
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--principal-span);
+    clip-path: circle(50% at bottom right);
+}
+
+
+/* estilo no footer ↓ */
+footer {
+    padding-left: 100px;
+    font-size: xx-large;
+}
+
+footer a {
+    color: var(--cinza);
+}
