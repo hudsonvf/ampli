@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link para a página de estilos css ↓ -->
+    <link rel="stylesheet" href="estilo.css" />
+    <!-- link para usar box icons importado da internet ↓ -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Prática 3 - Etapa 4</title>
+  </head>
+  <body>
+    <!-- header / nav ↓ -->
+    <header id="nav">
+      <nav>
+        <img src="./logoSE.png" />
+        <ul>
+          <li>
+            <a id="nav-home" class="ativo" href="#home">Home</a>
+          </li>
+
+          <li>
+            <a id="nav-sobre" href="#sobre">Sobre</a>
+          </li>
+
+          <li>
+            <a id="nav-contato" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main section conteúdo principal ↓ -->
+    <main>
+      <div>
+        <section id="home">
+          <h1 class="z-index-2">Olá, somos a <span>Super Empresa</span></h1>
+          <br />
+          <p class="z-index-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            beatae laboriosam consequatur illo eos rerum blanditiis ipsa animi
+            quibusdam eveniet, delectus nobis at repellendus voluptatibus odit
+            praesentium incidunt mollitia! Fugit.
+          </p>
+
+          <div class="z-index-2">
+            <a href="#sobre">
+              <button>Produtos</button>
+            </a>
+
+            <a href="#contato" class="btn-contato">
+              <button>Contato</button>
+            </a>
+          </div>
+          <div class="circulo"></div>
+        </section>
+
+        <!-- main section sobre ↓ -->
+        <section id="sobre">
+          <h2>Sobre <span>Nós</span></h2>
+          <br />
+
+          <div>
+            <h3>Um pouco sobre a nossa história</h3>
+
+            <p>
+              A Super Empresa foi fundada com o objetivo de oferecer os melhores
+              produtos do mercado. Nossa missão é qualidade e inovação. Desde
+              nossa criação, temos nos dedicado a desenvolver soluções
+              eficientes e inovadoras, atendendo às necessidades de nossos
+              clientes com excelência. Contamos com uma equipe altamente
+              qualificada e comprometida com a satisfação do consumidor. Ao
+              longo dos anos, a Super Empresa conquistou a confiança do mercado
+              e se consolidou como referência em seu segmento. Nosso compromisso
+              é continuar inovando e crescendo junto com nossos clientes e
+              parceiros.
+            </p>
+          </div>
+          <br />
+
+          <div class="produtos-se">
+            <h4>
+              Nossos produtos são desenvolvidos com tecnologia de ponta,
+              garantindo durabilidade, segurança e alto desempenho. Estamos
+              sempre em busca de aprimoramento e novas tecnologias para
+              continuar entregando o melhor para nossos clientes.
+            </h4>
+
+            <div class="cards-produtos">
+              <div class="cards">
+                <article class="card">
+                  <header>
+                    <h4>Melhor produto</h4>
+                  </header>
+
+                  <img
+                    card--img
+                    src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHByb2R1dG98ZW58MHx8MHx8fDA%3D"
+                    alt="foto de: Mohammad Metri no: https://unsplash.com/pt-br/fotografias/par-de-bombas-de-amendoa-floral-azul-e-rosa-E-0ON3VGrBc"
+                  />
+                  <div class="content">
+                    <p>
+                      Imagem de: Mohammad Metri no:
+                      https://unsplash.com/pt-br/fotografias/par-de-bombas-de-amendoa-floral-azul-e-rosa-E-0ON3VGrBc
+                    </p>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <header>
+                    <h4>Produto mais vendido</h4>
+                  </header>
+
+                  <img
+                    card--img
+                    src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2R1dG98ZW58MHx8MHx8fDA%3D"
+                    alt="foto de: Giorgio Trovato no: https://unsplash.com/pt-br/fotografias/modelo-em-escala-de-cupe-de-besouro-volkswagen-branco-p0OlRAAYXLY"
+                  />
+                  <div class="content">
+                    <p>
+                      Imagem de: Giorgio Trovato no:
+                      https://unsplash.com/pt-br/fotografias/modelo-em-escala-de-cupe-de-besouro-volkswagen-branco-p0OlRAAYXLY
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- main section contato ↓ -->
+        <section id="contato">
+          <h2>Nos <span>Contate!</span></h2>
+
+          <form>
+            <div>
+              <input type="text" id="nome" name="nome" value="Nome" />
+              <br>
+              <br>
+              <input type="email" id="email" name="email" value="Email" />
+              <br>
+              <br>
+            </div>
+            
+            <div>
+              <input type="text" id="telefone" name="telefone" value="Telefone" />
+              <br>
+              <br>
+              <input type="text" id="assunto" name="assunto" value="Assunto" />
+              <br>
+              <br>
+            </div>
+
+            <div>
+              <textarea name="message" rows="10" cols="30">
+                Sua mensagem...
+              </textarea> 
+            </div>
+            
+            <div>
+              <button>Enviar</button>
+            </div>
+            
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer ↓ -->
+    <footer>
+      <div>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="bx bxl-facebook-circle"></i>
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="bx bxl-twitter"></i>
+        </a>
+
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
